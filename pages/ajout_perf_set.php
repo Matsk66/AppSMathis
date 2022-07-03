@@ -1,0 +1,35 @@
+<?php
+require("../config/connexion.php");
+
+$Date_S   = $_GET["Date_S"];
+$Traction_S  = $_GET["Traction_S"];
+$Dips_S    = $_GET["Dips_S"];
+
+$connexion = mysqli_connect(SERVEUR, LOGIN, PASSE);
+if(!$connexion)                         {echo "pas de connexion!";}
+if(!mysqli_select_db($connexion,BASE))  {echo "Erreur!";}
+
+$req_ajout_dips_S = "INSERT INTO dips_set VALUES ($Dips_S, \"$Date_S\");";
+$req_ajout_Traction_S = "INSERT INTO tractions_set VALUES ($Traction_S, \"$Date_S\");";
+
+mysqli_query($connexion, $req_ajout_Traction_S);
+mysqli_query($connexion, $req_ajout_dips_S);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/ajout_.css">
+    <title>Ajout d'un membre</title>
+</head>
+<body>
+    <section class = "header">
+            <h1>Performance ajouté avec succès ! </h1>
+            <form>
+        <input class ='button' type="button" value="Retour" onclick="history.go(-1)">
+        </form> 
+    </section>
+    
+</body>

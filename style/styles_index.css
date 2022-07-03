@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(184, 189, 250);
+}
+
+h2 {
+  list-style: none;
+  border-radius: 30px;
+  padding: 35px;
+  background-color: #0000003b;
+}
+li {
+  margin-left: 20px;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: rgba(127, 255, 212, 0);
+}
+
+li{
+  list-style: none;
+}

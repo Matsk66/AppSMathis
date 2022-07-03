@@ -1,0 +1,153 @@
+
+a{
+  text-decoration: none;
+}
+
+.box {
+
+  width: 320px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 25px;
+  
+}
+
+.slide-img{
+  height: 500px;
+  position: relative;
+}
+
+.slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+
+
+.type{
+  display: flex;
+  flex-direction: column;
+}
+
+.type a {
+  color: #222222;
+  margin: 5px 0px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-right: 8px;
+}
+
+
+
+.price{
+  color: #222222;
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: poppins;
+  letter-spacing: 0.5px;
+}
+.overplay{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%, -50%) ;
+  width: 100%;
+  height:100%;
+  background-color: rgba(92, 94, 236, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Jeu {
+  font-size: 1.1rem;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffffcc;
+  font-weight: 1000;
+  color: #252525;
+  letter-spacing: 1px;
+  font-family: calibri ;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  
+}
+
+.Jeu:hover{
+  color: #240303;
+  background-color: #615ff1;
+  transition: all ease 0.3s;
+}
+
+
+.slide-img:hover .overplay{
+  visibility: visible;
+  animation:fade 0.5s;
+}
+
+@keyframes fade{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slider {
+  width: 100%;
+  height: 60vh;
+  padding-bottom: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  margin: 5px;
+  padding: 0px;
+  object-fit: cover;
+  background-color:darkgray;
+}
+
+div.header {
+
+  font-size: 35px;
+  border-top: 0px auto;
+  padding-top: 30px ;
+  padding-bottom:30px ;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: underline;
+  text-shadow: 2px 4px 2px rgba(0,0,0,0.1);
+}
+
+.select {
+
+  margin-top: 40px ;
+  margin-bottom: 70px ;
+  display: flex;
+  justify-content: center;
+
+}
+nav.head {
+  background-color: #0000003b;
+  display: flex;
+  border-radius: 50px;
+  
+}
+nav img {
+  width: 175px;
+  height: 125px;
+  padding-right: 585px;
+  margin-left: 30px ;
+  padding-top: 55px ;
+  padding-left: 10px ;
+  
+}
